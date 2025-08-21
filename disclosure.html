@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Affiliate Disclosure • True Crime Library</title>
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="description" content="Affiliate disclosure for True Crime Library.">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <div class="brand">📚 <span>True Crime Library</span></div>
+      <nav class="nav">
+        <a href="index.html#featured">Featured</a>
+        <a href="index.html#latest">Latest</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="index.html#ethics">Ethics</a>
+        <a href="index.html#newsletter">Newsletter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Affiliate Disclosure</h1>
+      <article class="card">
+        <p>
+          Some pages on this site include affiliate links to books, documentaries, or tools. 
+          If you purchase through these links, we may earn a small commission at no extra cost to you. 
+          These recommendations are chosen for usefulness and relevance; they do not affect the substance of our case summaries or analysis.
+        </p>
+        <p class="muted">
+          We prioritize primary sources and respectful reporting. Affiliate revenue helps support research time and hosting.
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>Disclaimer:</strong> All content is for educational purposes. We do not publish private addresses or unverified rumors.</p>
+      <p>© <span id="year"></span> True Crime Library. All rights reserved. <a href="disclosure.html">Affiliate Disclosure</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

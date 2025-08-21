@@ -1,0 +1,193 @@
+# CASE PAGE cat > cases/marigold-cold-case.html << 'HTML'
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>The Marigold Cold Case • True Crime Library</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="brand">📚 <span>True Crime Library</span></div>
+        <nav class="nav">
+          <a href="../index.html#featured">Featured</a>
+          <a href="../index.html#latest">Latest</a>
+          <a href="../index.html#categories">Categories</a>
+          <a href="../index.html#ethics">Ethics</a>
+          <a href="../index.html#newsletter">Newsletter</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <p class="muted">
+          <a href="../index.html">Home</a> › Cases ›
+          <strong>The Marigold Cold Case</strong>
+        </p>
+        <h1 style="margin-top: 8px">The Marigold Cold Case</h1>
+
+        <div class="chips" style="margin: 10px 0 18px">
+          <span class="chip">Status: Unsolved</span>
+          <span class="chip">Location: Willow County</span>
+          <span class="chip">Last updated: <span id="updated"></span></span>
+          <span class="chip">Category: Timeline • Forensics</span>
+        </div>
+
+        <article class="card">
+          <h3>Summary</h3>
+          <p>
+            Concise overview of what happened and why the case matters. Keep to
+            3–6 sentences.
+          </p>
+        </article>
+        <section class="card promo">
+          <h3>Case Journal – Printable</h3>
+          <p>
+            Organize timelines, evidence, sources, and bias notes with a calm,
+            respectful structure. Perfect for following cold cases.
+          </p>
+          <a class="btn" href="YOUR_PRODUCT_LINK" target="_blank" rel="noopener"
+            >Get the PDF →</a
+          >
+        </section>
+
+        <section class="section">
+          <div class="grid grid--side">
+            <article class="card">
+              <h3>Timeline</h3>
+              <ul class="timeline">
+                <li><span>2003-08-14</span> Disappearance reported</li>
+                <li><span>2003-09-02</span> Vehicle discovered</li>
+                <li><span>2005-02-18</span> DNA sample logged</li>
+                <li><span>2018-11-09</span> Cold case unit formed</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Key Players</h3>
+              <ul class="list">
+                <li><strong>Victim:</strong> Jane Doe (27)</li>
+                <li><strong>Investigator:</strong> Det. R. Alvarez</li>
+                <li><strong>POIs:</strong> Aliases A & B</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="grid grid--side">
+            <article class="card">
+              <h3>Evidence</h3>
+              <details class="evi">
+                <summary>Vehicle & effects</summary>
+                <p class="muted">Chain of custody intact; no forced entry.</p>
+              </details>
+              <details class="evi">
+                <summary>DNA (2005)</summary>
+                <p class="muted">Partial STR; consider re-testing.</p>
+              </details>
+              <details class="evi">
+                <summary>Witnesses</summary>
+                <p class="muted">
+                  Two reports within 48 hrs; reliability mixed.
+                </p>
+              </details>
+            </article>
+            <article class="card">
+              <h3>Theories</h3>
+              <ul class="list">
+                <li>
+                  <strong>Suspect A acted alone</strong>
+                  <div class="meter"><span style="width: 60%"></span></div>
+                </li>
+                <li>
+                  <strong>Accomplices involved</strong>
+                  <div class="meter"><span style="width: 35%"></span></div>
+                </li>
+                <li>
+                  <strong>Accident misinterpreted</strong>
+                  <div class="meter"><span style="width: 25%"></span></div>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="grid">
+            <!-- Recommended Reading -->
+            <article class="card card--reco">
+              <h3>Recommended Reading</h3>
+              <ul class="list">
+                <li>
+                  <a
+                    href="AFFILIATE_LINK_1"
+                    target="_blank"
+                    rel="sponsored noopener noreferrer"
+                  >
+                    The Marigold Mystery: Case Files & Court Records (Book)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="AFFILIATE_LINK_2"
+                    target="_blank"
+                    rel="sponsored noopener noreferrer"
+                  >
+                    Vanished at Willow Creek (Documentary)
+                  </a>
+                </li>
+              </ul>
+              <p class="muted">
+                This section may contain affiliate links; we may earn from
+                qualifying purchases at no extra cost to you.
+              </p>
+            </article>
+
+            <!-- Sources -->
+            <article class="card">
+              <h3>Sources</h3>
+              <ol class="list">
+                <li>Court filing (2006) — <a href="#">Docket 06-CR-112</a></li>
+                <li>Sheriff pressers (2003–2019)</li>
+                <li>Archival reporting — <a href="#">Willow Gazette</a></li>
+              </ol>
+            </article>
+
+            <!-- Bias Notes -->
+            <article class="card">
+              <h3>Bias Notes</h3>
+              <p class="muted">
+                Assumptions and alternative hypotheses disclosed.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <nav class="section" style="padding-top: 0">
+          <a class="chip" href="../index.html">← Back to Library</a>
+          <a class="chip" href="../articles/dna-101-str-vs-mtdna.html"
+            >Next: DNA 101</a
+          >
+        </nav>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p><strong>Disclaimer:</strong> Educational purposes only.</p>
+        <p>© <span id="year"></span> True Crime Library.</p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("updated").textContent = new Date()
+        .toISOString()
+        .slice(0, 10);
+    </script>
+  </body>
+</html>

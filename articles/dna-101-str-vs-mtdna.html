@@ -1,0 +1,109 @@
+cat > articles/dna-101-str-vs-mtdna.html << 'HTML' <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DNA 101: STR vs. mtDNA • True Crime Library</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- header + nav like the case page -->
+    <header class="header">
+      <div class="container header__inner">
+        <div class="brand">📚 <span>True Crime Library</span></div>
+        <nav class="nav">
+          <a href="../index.html#featured">Featured</a>
+          <a href="../index.html#latest">Latest</a>
+          <a href="../index.html#categories">Categories</a>
+          <a href="../index.html#ethics">Ethics</a>
+          <a href="../index.html#newsletter">Newsletter</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <p class="muted">
+          <a href="../index.html">Home</a> › Forensics 101 ›
+          <strong>DNA 101: STR vs. mtDNA</strong>
+        </p>
+        <h1 style="margin-top: 8px">DNA 101: STR vs. mtDNA</h1>
+        <div class="chips" style="margin: 10px 0 18px">
+          <span class="chip">Forensics 101</span>
+          <span class="chip">Beginner Guide</span>
+          <span class="chip">Last updated: <span id="updated"></span></span>
+        </div>
+
+        <article class="card">
+          <h3>Overview</h3>
+          <p>
+            STR analyzes repeating nuclear DNA; mtDNA is maternal-line DNA that
+            survives when STR may not. STR is standard for direct comparisons;
+            mtDNA helps with degraded or tiny samples.
+          </p>
+        </article>
+
+        <section class="section">
+          <div class="grid grid--side">
+            <article class="card">
+              <h3>When to use which?</h3>
+              <ul class="list">
+                <li>
+                  <strong>STR:</strong> Good, non-degraded samples;
+                  CODIS-compatible.
+                </li>
+                <li>
+                  <strong>mtDNA:</strong> Hair shafts, bones, old/degraded
+                  samples; maternal line only.
+                </li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Strengths & limits</h3>
+              <ul class="list">
+                <li>
+                  <strong>STR strengths:</strong> High discrimination,
+                  validated.
+                </li>
+                <li>
+                  <strong>STR limits:</strong> Degrades with time/heat; mixtures
+                  are complex.
+                </li>
+                <li>
+                  <strong>mtDNA strengths:</strong> Survives harsh conditions.
+                </li>
+                <li>
+                  <strong>mtDNA limits:</strong> Lower discrimination; can’t
+                  distinguish maternal relatives.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <nav class="section" style="padding-top: 0">
+          <a class="chip" href="../index.html">← Back to Library</a>
+          <a class="chip" href="../cases/marigold-cold-case.html"
+            >Back to Marigold case</a
+          >
+        </nav>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p><strong>Disclaimer:</strong> Educational purposes only.</p>
+        <p>© <span id="year"></span> True Crime Library.</p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("updated").textContent = new Date()
+        .toISOString()
+        .slice(0, 10);
+    </script>
+  </body>
+</html>
+HTML

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="True Crime Library: calm, respectful case summaries, visual timelines, and forensics explainers. No sensationalism—just clarity."
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>True Crime Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Nav -->
+    <header class="header">
+      <div class="container header__inner">
+        <div class="brand">📚 <span>True Crime Library</span></div>
+        <nav class="nav">
+          <a href="#featured" class="active">Featured</a>
+          <a href="#latest">Latest</a>
+          <a href="#categories">Categories</a>
+          <a href="#ethics">Ethics</a>
+          <a href="#newsletter">Newsletter</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1>A calm, well-organized archive of real cases</h1>
+          <p>
+            Carefully researched summaries, visual timelines, and respectful
+            analysis. No sensationalism—just clarity.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#latest">Browse latest</a>
+            <a class="btn" href="cases/marigold-cold-case.html"
+              >Read the case →</a
+            >
+            <a class="btn btn--outline" href="#categories"
+              >Explore categories</a
+            >
+          </div>
+
+          <div class="search">
+            <label for="site-search">Search the library</label>
+            <div class="search__row">
+              <input
+                id="site-search"
+                type="search"
+                placeholder="e.g., “Zodiac” or “DNA forensics”"
+              />
+              <button class="btn" id="searchBtn">Search</button>
+            </div>
+            <p class="muted">
+              Try filters like <em>status:unsolved</em> or
+              <em>type:timeline</em> (coming soon).
+            </p>
+          </div>
+        </div>
+
+        <!-- Featured Case -->
+        <article id="featured" class="card">
+          <div class="badge">Editor’s Pick</div>
+          <h2>The Marigold Cold Case</h2>
+          <p>
+            An interactive timeline and annotated source list break down a
+            20-year mystery with fresh clarity.
+          </p>
+          <ul class="list">
+            <li>Concise timeline from disappearance to latest lead</li>
+            <li>Primary sources: court filings, archival news, FOIA docs</li>
+            <li>Bias notes and alternative hypotheses</li>
+          </ul>
+          <a class="btn" href="cases/marigold-cold-case.html"
+            >Read the case →</a
+          >
+        </article>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="section">
+      <div class="container">
+        <h3>Browse by category</h3>
+        <div class="chips">
+          <a href="#cat-solved" class="chip">Solved Cases</a>
+          <a href="#cat-unsolved" class="chip">Unsolved Mysteries</a>
+          <a href="#cat-timelines" class="chip">Case Timelines</a>
+          <a href="#cat-profiles" class="chip">Offender Profiles</a>
+          <a href="#cat-forensics" class="chip">Forensics 101</a>
+          <a href="#cat-legal" class="chip">Court & Verdicts</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest -->
+    <section id="latest" class="section section--alt">
+      <div class="container">
+        <h3>Latest additions</h3>
+        <div class="grid">
+          <article class="card">
+            <div class="tag">Unsolved</div>
+            <h4>Case Study 1: The Willow Creek Mystery</h4>
+            <p>
+              A clear timeline, primary sources, and measured analysis—presented
+              without sensationalism.
+            </p>
+            <a class="link" href="cases/marigold-cold-case.html">Read more →</a>
+          </article>
+          <article class="card">
+            <div class="tag">Solved</div>
+            <h4>Case Study 2: The Riverview Letters</h4>
+            <p>
+              From rumor to record: how court filings reshaped public
+              understanding of the case.
+            </p>
+            <a class="link" href="#">Read more →</a>
+          </article>
+          <article class="card">
+            <div class="tag">Unsolved</div>
+            <h4>Case Study 3: The Old Depot Disappearance</h4>
+            <p>
+              What the forensics do—and don’t—show, and how to read the gaps
+              respectfully.
+            </p>
+            <a class="link" href="#">Read more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Poll + Timeline -->
+    <section class="section">
+      <div class="container grid grid--side">
+        <article class="card">
+          <h3>Community Poll</h3>
+          <p class="muted">
+            Based on the evidence presented in the Marigold case, which theory
+            seems most plausible?
+          </p>
+          <form id="pollForm" class="poll">
+            <label
+              ><input type="radio" name="poll" value="alone" /> Suspect A acted
+              alone</label
+            >
+            <label
+              ><input type="radio" name="poll" value="accomplices" />
+              Accomplices involved</label
+            >
+            <label
+              ><input type="radio" name="poll" value="accident" /> Accident
+              misinterpreted</label
+            >
+            <label
+              ><input type="radio" name="poll" value="insufficient" />
+              Insufficient evidence to say</label
+            >
+            <button type="submit" class="btn">Submit vote</button>
+            <p id="pollThanks" class="success hidden" role="status">
+              Thanks for voting! Live results coming soon.
+            </p>
+          </form>
+        </article>
+
+        <article class="card">
+          <h3>Timeline Preview</h3>
+          <ul class="timeline">
+            <li><span>2003-08-14</span> Reported missing</li>
+            <li><span>2003-09-02</span> Vehicle discovered</li>
+            <li><span>2005-02-18</span> DNA sample logged</li>
+            <li><span>2018-11-09</span> Cold case unit formed</li>
+          </ul>
+          <button class="link">Open full timeline →</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="section">
+      <div class="container grid grid--side">
+        <div>
+          <h3>Weekly digest</h3>
+          <p class="muted">
+            Subscribe for new case summaries, documentary picks, and research
+            tips.
+          </p>
+          <form id="subForm" class="subscribe">
+            <input
+              type="email"
+              id="subEmail"
+              placeholder="Your email"
+              aria-label="Email"
+              required
+            />
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+          <p id="subThanks" class="success hidden">
+            Thanks! Check your inbox for a confirmation.
+          </p>
+        </div>
+        <article class="card promo">
+          <h4>Case Journal – Printable</h4>
+          <p class="muted">
+            A tidy, printable notebook to track timelines, evidence, sources,
+            and hypotheses.
+          </p>
+          <a class="btn" href="YOUR_PRODUCT_LINK" target="_blank" rel="noopener"
+            >Get the PDF →</a
+          >
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <strong>Disclaimer:</strong> All content is for educational purposes.
+          We do not publish private addresses or unverified rumors.
+        </p>
+        <p>
+          © <span id="year"></span> True Crime Library. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
